@@ -39,6 +39,12 @@ router.use(function(req, res, next) {
 });
 
 	// api ---------------------------------------------------------------------
+
+	//Welcome Message going to /api
+	router.get('/', function(req, res) {
+		res.json({ message: 'hooray! welcome to our api!' });	
+	});
+
 	// get all todos
 	app.get('/api/todos', function(req, res) {
 
